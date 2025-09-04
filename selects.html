@@ -7,15 +7,18 @@
 </head>
 <body>
     <form onsubmit="" method="get">
-        <label for="">Nome</label><input type="text"><br>
-        <label for="">Cargo <br> </label><select name="role"> 
+        <label for="">Nome</label><input type="text" name="name"><br>
+        <label for="">Cargo <br> </label>
+        <select name="role" multiple> 
             <option value=" ">Selecione o Cargo</option>
             <option value="eletricista">Eletricista</option>
             <option value="professor">Professor</option>
-            <option value="ti">T.I</option>
+            <option selected value="ti">T.I</option>
             
         </select> <br>
-        <label for="">Assunto</label> <input type="text"><br>
+        <label for="">Assunto</label> <input type="text" name="subject"><br>
+        <label for="">Mensagem</label>
+        <textarea rows="20" cols="80" name="message"></textarea>
         <button type="submit">Enviar</button>
 
     </form>
